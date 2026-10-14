@@ -44,6 +44,7 @@ const BookingSuccess = () => {
       // Save back to localStorage
       localStorage.setItem('bookease_appointments', JSON.stringify(existingAppointments));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Empty dependency array - run only once
 
   if (!service || !selectedDate || !selectedTime) {
